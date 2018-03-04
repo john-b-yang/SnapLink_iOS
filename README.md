@@ -12,3 +12,6 @@ In Process:
 - Creating server.py with dummy functions
 
 Completed:
+
+Tips:
+- Protobuf Compilation: protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/test.proto
