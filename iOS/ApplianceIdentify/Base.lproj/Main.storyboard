@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x5-jA-Xai">
-                                <rect key="frame" x="137" y="537" width="100" height="100"/>
+                                <rect key="frame" x="137" y="517" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6x5-jA-Xai" secondAttribute="height" multiplier="1:1" id="YxX-Qd-XzE"/>
                                     <constraint firstAttribute="width" constant="100" id="lBk-VQ-nyo"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved to Photo Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRM-Df-4lj">
-                                <rect key="frame" x="102" y="506" width="170" height="21"/>
+                                <rect key="frame" x="102" y="486" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAd-3Y-Kif" secondAttribute="trailing" id="9I5-T0-ik9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hAd-3Y-Kif" secondAttribute="bottom" id="Aix-N4-D2z"/>
-                            <constraint firstItem="6x5-jA-Xai" firstAttribute="bottom" secondItem="hAd-3Y-Kif" secondAttribute="bottom" constant="-30" id="XHS-hD-2iC"/>
+                            <constraint firstItem="6x5-jA-Xai" firstAttribute="bottom" secondItem="hAd-3Y-Kif" secondAttribute="bottom" constant="-50" id="XHS-hD-2iC"/>
                             <constraint firstItem="hAd-3Y-Kif" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yar-kx-Enu"/>
                             <constraint firstItem="hAd-3Y-Kif" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="akp-kl-LvY"/>
                             <constraint firstItem="6x5-jA-Xai" firstAttribute="top" secondItem="RRM-Df-4lj" secondAttribute="bottom" constant="10" id="dBA-2S-qdt"/>
@@ -65,6 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Capture" width="150" height="150"/>
+        <image name="Capture" width="160" height="160"/>
     </resources>
 </document>

@@ -22,7 +22,7 @@ class CameraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         captureButton.layer.cornerRadius = captureButton.frame.size.width / 2
         captureButton.clipsToBounds = true
         notification.alpha = 0
@@ -56,6 +56,15 @@ class CameraViewController: UIViewController {
     }
     
     @IBAction func onTapTakePhoto(_ sender: Any) {
+        captureButton.alpha = 1.0
+        UIView.animate(withDuration: 1.0, animations: {
+            self.captureButton.alpha = 0.5
+        }) { (finished) in
+            UIView.animate(withDuration: 1.0, animations: {
+                self.captureButton.alpha = 1.0
+            })
+        }
+        
         // Make sure capturePhotoOutput is valid
         guard let capturePhotoOutput = self.capturePhotoOutput else { return }
         // Get an instance of AVCapturePhotoSettings class
