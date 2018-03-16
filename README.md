@@ -15,3 +15,4 @@ Completed:
 
 Tips:
 - Protobuf Compilation: protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/test.proto
+- For concurrent library, please use python 2.7
