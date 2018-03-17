@@ -6,4 +6,5 @@ message Number {
 
 service Calculator {
     rpc SquareRoot(Number) returns (Number) {}
+    rpc Squared(Number) returns (Number) {}
 }

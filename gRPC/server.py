@@ -17,6 +17,13 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
         response.value = calculator.square_root(request.value)
         return response
 
+    # Expose Squared Function
+    # Params: request, response (Number data type)
+    def Squared(self, request, context):
+        response = calculator_pb2.Number()
+        response.value = calculator.squared(request.value)
+        return response
+
 # Create gRPC server
 server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
 

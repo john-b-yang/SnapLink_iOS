@@ -16,7 +16,10 @@ print('Creating Request')
 number = calculator_pb2.Number(value=16)
 
 # Make Call
-print('Making Call')
+print('Making Square Root Call')
 response = stub.SquareRoot(number)
+print("Response: ", response.value)
 
+print('Making Squared Call')
+response = stub.Squared(number)
 print("Response: ", response.value)
