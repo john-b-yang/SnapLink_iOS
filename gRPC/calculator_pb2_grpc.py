@@ -24,6 +24,11 @@ class CalculatorStub(object):
         request_serializer=calculator__pb2.Number.SerializeToString,
         response_deserializer=calculator__pb2.Number.FromString,
         )
+    self.Factorial = channel.unary_unary(
+        '/Calculator/Factorial',
+        request_serializer=calculator__pb2.Number.SerializeToString,
+        response_deserializer=calculator__pb2.Number.FromString,
+        )
 
 
 class CalculatorServicer(object):
@@ -44,6 +49,13 @@ class CalculatorServicer(object):
     context.set_details('Method not implemented!')
     raise NotImplementedError('Method not implemented!')
 
+  def Factorial(self, request, context):
+    # missing associated documentation comment in .proto file
+    pass
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
 
 def add_CalculatorServicer_to_server(servicer, server):
   rpc_method_handlers = {
@@ -54,6 +66,11 @@ def add_CalculatorServicer_to_server(servicer, server):
       ),
       'Squared': grpc.unary_unary_rpc_method_handler(
           servicer.Squared,
+          request_deserializer=calculator__pb2.Number.FromString,
+          response_serializer=calculator__pb2.Number.SerializeToString,
+      ),
+      'Factorial': grpc.unary_unary_rpc_method_handler(
+          servicer.Factorial,
           request_deserializer=calculator__pb2.Number.FromString,
           response_serializer=calculator__pb2.Number.SerializeToString,
       ),

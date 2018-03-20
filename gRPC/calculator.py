@@ -9,3 +9,9 @@ def squared(x):
     print('Squared Called')
     y = x * x
     return y
+
+def factorial(x):
+    if (x == 1):
+        return x
+    else:
+        return x * factorial(x - 1)

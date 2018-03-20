@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='calculator.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x10\x63\x61lculator.proto\"\x17\n\x06Number\x12\r\n\x05value\x18\x01 \x01(\x02\x32M\n\nCalculator\x12 \n\nSquareRoot\x12\x07.Number\x1a\x07.Number\"\x00\x12\x1d\n\x07Squared\x12\x07.Number\x1a\x07.Number\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x10\x63\x61lculator.proto\"\x17\n\x06Number\x12\r\n\x05value\x18\x01 \x01(\x02\x32n\n\nCalculator\x12 \n\nSquareRoot\x12\x07.Number\x1a\x07.Number\"\x00\x12\x1d\n\x07Squared\x12\x07.Number\x1a\x07.Number\"\x00\x12\x1f\n\tFactorial\x12\x07.Number\x1a\x07.Number\"\x00\x62\x06proto3')
 )
 
 
@@ -74,7 +74,7 @@ _CALCULATOR = _descriptor.ServiceDescriptor(
   index=0,
   options=None,
   serialized_start=45,
-  serialized_end=122,
+  serialized_end=155,
   methods=[
   _descriptor.MethodDescriptor(
     name='SquareRoot',
@@ -89,6 +89,15 @@ _CALCULATOR = _descriptor.ServiceDescriptor(
     name='Squared',
     full_name='Calculator.Squared',
     index=1,
+    containing_service=None,
+    input_type=_NUMBER,
+    output_type=_NUMBER,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='Factorial',
+    full_name='Calculator.Factorial',
+    index=2,
     containing_service=None,
     input_type=_NUMBER,
     output_type=_NUMBER,
