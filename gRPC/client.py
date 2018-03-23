@@ -23,3 +23,7 @@ print("Response: ", response.value)
 print('Making Squared Call')
 response = stub.Squared(number)
 print("Response: ", response.value)
+
+print('Making Factorial Call')
+response = stub.Factorial(number)
+print("Response: ", response.value)
