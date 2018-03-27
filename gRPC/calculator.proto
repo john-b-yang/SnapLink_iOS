@@ -4,8 +4,13 @@ message Number {
     float value = 1;
 }
 
+message Image {
+    string hash = 1;
+}
+
 service Calculator {
     rpc SquareRoot(Number) returns (Number) {}
     rpc Squared(Number) returns (Number) {}
     rpc Factorial(Number) returns (Number) {}
+    rpc RotateImage(Image) returns (Image) {}
 }

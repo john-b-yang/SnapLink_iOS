@@ -24,10 +24,18 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
         response.value = calculator.squared(request.value)
         return response
 
+    # Expose Factorial Function
     def Factorial(self, request, context):
         print('Factorial Called')
         response = calculator_pb2.Number()
         response.value = calculator.factorial(request.value)
+        return response
+
+    # Expose Rotate Function
+    def RotateImage(self, request, context):
+        print('Rotate Image Called')
+        response = calculator_pb2.Image()
+        response.hash = calculator.rotateImage(request.hash)
         return response
 
 # Create gRPC server

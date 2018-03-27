@@ -15,3 +15,6 @@ def factorial(x):
         return x
     else:
         return x * factorial(x - 1)
+
+def rotateImage(x):
+    return x
