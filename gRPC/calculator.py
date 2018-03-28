@@ -1,4 +1,4 @@
-import math
+import math, base64
 
 def square_root(x):
     print('Square Root Called')
@@ -17,4 +17,7 @@ def factorial(x):
         return x * factorial(x - 1)
 
 def rotateImage(x):
+    # X is a hash code
+    png_recovered = base64.decodestring(x)
+    print(png_recovered)
     return x
