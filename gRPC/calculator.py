@@ -19,5 +19,6 @@ def factorial(x):
 def rotateImage(x):
     # X is a hash code
     png_recovered = base64.decodestring(x)
-    print(png_recovered)
+    temp_image = open('temp.png', 'wb')
+    temp_image.write(png_recovered)
     return x
