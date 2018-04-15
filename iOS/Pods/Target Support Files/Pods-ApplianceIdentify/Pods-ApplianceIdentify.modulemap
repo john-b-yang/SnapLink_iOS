@@ -1,0 +1,6 @@
+framework module Pods_ApplianceIdentify {
+  umbrella header "Pods-ApplianceIdentify-umbrella.h"
+
+  export *
+  module * { export * }
+}
